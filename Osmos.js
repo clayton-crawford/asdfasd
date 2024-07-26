@@ -15,10 +15,8 @@ window.Osmos = (function () {
   // NOTE: Make sure to change it back to 'false' before committing changes
   const isLocalDevelopment = window.location.host === 'localhost:3000' ?? false;
 
-  const URL_PREFIX = isLocalDevelopment
-    ? 'https://localhost:3000'
-    : window.urlPrefix || 'https://app.osmos.io';
-  const API_PREFIX = window.apiPrefix || 'https://api.osmos.io';
+  const URL_PREFIX = 'https://app.osmos.io';
+  const API_PREFIX =  'https://api.osmos.io';
   const MAX_RECORDS = 100_000;
 
   // iframe should be 100% width and height, with an 18px margin on all sides
